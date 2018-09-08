@@ -6,3 +6,9 @@ eureka:
       defaultZone: http://localhost:8010/eureka/
 server:
   port: ${PORT:${SERVER_PORT:0}}
+
+---
+spring:
+  profiles: teams-ui
+server:
+  port: 8020
